@@ -1,0 +1,793 @@
+﻿/* Expense & Budget Visualizer - Stylesheet */
+
+/* =========================================================
+   TASK 11.1 — CSS Custom Properties (Theme Variables)
+   Light palette on :root / [data-theme="light"].
+   Dark palette on [data-theme="dark"].
+   The Theme module sets data-theme on <html>; all components
+   reference these variables so the whole UI restyles with a
+   single attribute change (design/Theme Implementation).
+   ========================================================= */
+
+:root,
+[data-theme="light"] {
+  /* Surfaces */
+  --color-bg:          #f5f6fa;      /* page background              */
+  --color-surface:     #ffffff;      /* card / section background    */
+  --color-surface-alt: #eef0f6;      /* subtle alternate surface     */
+  --color-border:      #d1d5e0;      /* dividers and input borders   */
+
+  /* Text */
+  --color-text:        #1e2130;      /* primary body text            */
+  --color-text-muted:  #6b7280;      /* secondary / helper text      */
+
+  /* Accent — blue primary */
+  --color-accent:      #3b82f6;      /* buttons, focus rings         */
+  --color-accent-hover:#2563eb;      /* hover state                  */
+  --color-accent-text: #ffffff;      /* text on accent backgrounds   */
+
+  /* Feedback */
+  --color-error:       #ef4444;      /* validation / error messages  */
+  --color-error-bg:    #fef2f2;      /* error message background     */
+  --color-warning:     #f59e0b;
+
+  /* Balance display */
+  --color-balance-bg:  #eff6ff;
+  --color-balance-text:#1d4ed8;
+
+  /* Delete button */
+  --color-delete:      #ef4444;
+  --color-delete-hover:#dc2626;
+
+  /* Shadows */
+  --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] {
+  /* Surfaces */
+  --color-bg:          #0f0f1a;      /* deep dark page background    */
+  --color-surface:     #1a1a2e;      /* card / section background    */
+  --color-surface-alt: #22223b;      /* subtle alternate surface     */
+  --color-border:      #2e2e4a;      /* dividers and input borders   */
+
+  /* Text */
+  --color-text:        #e8eaf6;      /* primary body text            */
+  --color-text-muted:  #9094a8;      /* secondary / helper text      */
+
+  /* Accent — matching blue (slightly lighter for dark bg legibility) */
+  --color-accent:      #60a5fa;
+  --color-accent-hover:#93c5fd;
+  --color-accent-text: #0f172a;
+
+  /* Feedback */
+  --color-error:       #f87171;
+  --color-error-bg:    #2d1515;
+  --color-warning:     #fbbf24;
+
+  /* Balance display */
+  --color-balance-bg:  #1e3a5f;
+  --color-balance-text:#93c5fd;
+
+  /* Delete button */
+  --color-delete:      #f87171;
+  --color-delete-hover:#fca5a5;
+
+  /* Shadows */
+  --shadow-card: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================================
+   TASK 11.2 — Clean, Minimal Visual Style & Typography
+   Sans-serif font stack, clear size hierarchy, readable
+   line-height, themed colors for all text and surfaces.
+   ========================================================= */
+
+/* ---- Reset / Base ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Typography hierarchy ---- */
+h1 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+}
+
+h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 0.3rem;
+}
+
+p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* ---- Inputs and selects ---- */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: 6px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Remove number-input spinners for a cleaner look */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ---- Buttons ---- */
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--color-accent-text);
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s, box-shadow 0.15s;
+  white-space: nowrap;
+}
+
+button:hover {
+  background-color: var(--color-accent-hover);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* ---- Cards / surface panels ---- */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow-card);
+}
+
+/* =========================================================
+   TASK 11.3 — Flexbox Single-Column Layout
+   Header → Form Section → Sort Controls → Transaction List
+   → Chart Section stacked vertically inside a centered
+   max-width container. (design/Responsive Design)
+   ========================================================= */
+
+/* ---- Outer page centering wrapper ---- */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; /* prevent horizontal scrollbar at narrow viewports */
+}
+
+/* #app-header and #app-main sit inside body and are
+   constrained to the same max-width so they align. */
+#app-header,
+#app-main {
+  width: 100%;
+  max-width: 600px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ---- Header ---- */
+#app-header {
+  padding-top: 1.1rem;
+  padding-bottom: 0;
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1.5px solid var(--color-border);
+}
+
+/* Theme toggle button — more subtle than the primary action button */
+#theme-toggle {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  background-color: var(--color-surface-alt);
+  border: 1.5px solid var(--color-border);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+
+#theme-toggle:hover {
+  background-color: var(--color-accent);
+  color: var(--color-accent-text);
+  border-color: var(--color-accent);
+}
+
+/* Balance display */
+.balance-display {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.7rem 0.9rem;
+  margin-top: 0.85rem;
+  background-color: var(--color-balance-bg);
+  border-radius: 8px;
+}
+
+#balance-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-balance-text);
+  opacity: 0.8;
+}
+
+#balance {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--color-balance-text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Main content area ---- */
+#app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* ---- Form Section ---- */
+#form-section {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow-card);
+}
+
+#transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-transaction {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+/* Validation messages */
+#validation-message,
+#category-validation-message {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-error);
+  background-color: var(--color-error-bg);
+  border-radius: 5px;
+  min-height: 0;
+  padding: 0;
+  /* Show/hide by content — no height when empty */
+}
+
+#validation-message:not(:empty),
+#category-validation-message:not(:empty) {
+  padding: 0.4rem 0.7rem;
+  margin-top: 0.4rem;
+}
+
+/* Custom category row */
+.custom-category {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.custom-category label {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.custom-category input {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+#add-category {
+  flex-shrink: 0;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.85rem;
+}
+
+/* ---- Sort Controls ---- */
+#sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  box-shadow: var(--shadow-card);
+}
+
+#sort-controls label {
+  margin-bottom: 0;
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
+
+#sort-select {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.875rem;
+}
+
+/* ---- Transaction List Section ---- */
+#transaction-list-section {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  box-shadow: var(--shadow-card);
+}
+
+/* TASK 11.4 — Scrollable list with overflow-y: auto and max-height */
+#transaction-list {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* Subtle scrollbar styling (WebKit) */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+#transaction-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+#transaction-list::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: 3px;
+}
+
+/* Individual transaction item */
+.transaction-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.75rem;
+  background-color: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 7px;
+  font-size: 0.9rem;
+}
+
+.transaction-name {
+  flex: 1 1 0;
+  min-width: 0;
+  font-weight: 500;
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transaction-amount {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.transaction-category {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-accent-text);
+  background-color: var(--color-accent);
+  border-radius: 10px;
+  padding: 0.15rem 0.55rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Delete button — minimal, destructive-action style */
+.delete-transaction {
+  flex-shrink: 0;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-delete);
+  background-color: transparent;
+  border: 1.5px solid var(--color-delete);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.12s, color 0.12s;
+}
+
+.delete-transaction:hover {
+  background-color: var(--color-delete);
+  color: #ffffff;
+}
+
+/* Empty / error state messages in the list section */
+#empty-list-message,
+#delete-error-message {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+#delete-error-message:not(:empty) {
+  color: var(--color-error);
+}
+
+/* ---- Chart Section ---- */
+#chart-section {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow-card);
+}
+
+#chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* TASK 11.5 — SVG chart scales to available width.
+   The JS sets viewBox="0 0 100 100" and preserveAspectRatio="xMidYMid meet"
+   on the <svg>. CSS gives it a fluid width within a sensible max so it
+   scales proportionally without being overridden. */
+.pie-chart {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;     /* lets the SVG scale proportionally via its viewBox */
+  margin: 0 auto;
+}
+
+/* Empty state message inside the chart container */
+#chart-empty-message {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* ---- Chart Legend ---- */
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.legend-label {
+  flex: 1 1 0;
+}
+
+/* =========================================================
+   TASK 11.6 — Responsive Media Query (max-width: 480px)
+   Smaller font sizes, reduced padding, narrower chart.
+   All controls and content fit without horizontal scrolling.
+   (Requirements 11.1, 11.2; NFR-2, NFR-3)
+   ========================================================= */
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+
+  /* Tighter horizontal gutters on the main containers */
+  #app-header,
+  #app-main {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  /* Reduce section gap so more fits on screen */
+  #app-main {
+    gap: 0.75rem;
+  }
+
+  /* Header */
+  .header-bar {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.15rem;
+  }
+
+  #balance {
+    font-size: 1.4rem;
+  }
+
+  /* Form section */
+  #form-section {
+    padding: 0.85rem 0.9rem;
+  }
+
+  #transaction-form {
+    gap: 0.6rem;
+  }
+
+  /* Sort controls — stack label + select vertically when tight */
+  #sort-controls {
+    flex-wrap: wrap;
+    padding: 0.6rem 0.75rem;
+    gap: 0.4rem;
+  }
+
+  #sort-select {
+    width: 100%;
+    flex: unset;
+  }
+
+  /* Transaction list */
+  #transaction-list-section {
+    padding: 0.75rem 0.85rem;
+  }
+
+  /* Narrower max-height on small screens so the chart stays reachable */
+  #transaction-list {
+    max-height: 240px;
+  }
+
+  .transaction-item {
+    padding: 0.5rem 0.6rem;
+    gap: 0.45rem;
+    font-size: 0.85rem;
+  }
+
+  .transaction-category {
+    font-size: 0.72rem;
+    padding: 0.12rem 0.45rem;
+  }
+
+  .delete-transaction {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* Chart — narrower max-width to fit small viewports */
+  #chart-section {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .pie-chart {
+    max-width: 200px;
+  }
+
+  .chart-legend {
+    max-width: 200px;
+  }
+
+  .legend-item {
+    font-size: 0.8rem;
+  }
+
+  /* Custom category — stack everything vertically */
+  .custom-category {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .custom-category input {
+    flex: unset;
+    width: 100%;
+  }
+
+  #add-category {
+    width: 100%;
+  }
+}
+
+/* ---- Category List (delete categories) ---- */
+#category-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+  padding: 0;
+}
+
+.category-list-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.6rem 0.25rem 0.75rem;
+  background-color: var(--color-surface-alt);
+  border: 1.5px solid var(--color-border);
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.category-list-name {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-category {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-text-muted);
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.12s, color 0.12s;
+  flex-shrink: 0;
+}
+
+.delete-category:hover {
+  background-color: var(--color-delete);
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .category-list-name {
+    max-width: 80px;
+  }
+}
+/* ---- Category List (delete categories) ---- */
+#category-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+  padding: 0;
+}
+
+.category-list-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.6rem 0.25rem 0.75rem;
+  background-color: var(--color-surface-alt);
+  border: 1.5px solid var(--color-border);
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.category-list-name {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-category {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-text-muted);
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.12s, color 0.12s;
+  flex-shrink: 0;
+}
+
+.delete-category:hover {
+  background-color: var(--color-delete);
+  color: #ffffff;
+}

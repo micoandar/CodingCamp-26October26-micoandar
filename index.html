@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Track daily spending with a balance, transaction list, and spending distribution chart." />
+  <title>Expense &amp; Budget Visualizer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!--
+    Top-level regions. Static markup defines the structure and the
+    interactive elements the JS modules (State, Validation, Render, Chart,
+    Sort, Theme, Controller) reference by id. Dynamic content — the balance
+    value, category options, transaction list items, and the inline SVG chart
+    — is injected by app.js at runtime.
+  -->
+  <header id="app-header">
+    <div class="header-bar">
+      <h1>Expense &amp; Budget Visualizer</h1>
+      <button id="theme-toggle" type="button" aria-pressed="false">
+        Toggle theme
+      </button>
+    </div>
+    <!-- Balance display: value updated by Render.renderBalance() -->
+    <div class="balance-display">
+      <span id="balance-label">Total Balance</span>
+      <span id="balance" aria-live="polite">0</span>
+    </div>
+  </header>
+
+  <main id="app-main">
+    <!-- Form Section: add a transaction (Validation / Controller) -->
+    <section id="form-section" aria-label="Add transaction">
+      <form id="transaction-form" novalidate>
+        <div class="form-field">
+          <label for="transaction-name">Name</label>
+          <input
+            id="transaction-name"
+            name="transaction-name"
+            type="text"
+            maxlength="100"
+            required
+            autocomplete="off"
+            placeholder="contoh: Makan siang"
+          />
+        </div>
+        <div class="form-field">
+          <label for="transaction-amount">Jumlah (Rp)</label>
+          <input
+            id="transaction-amount"
+            name="transaction-amount"
+            type="number"
+            step="1"
+            min="1"
+            max="999999999"
+            inputmode="numeric"
+            required
+            placeholder="contoh: 25000"
+          />
+        </div>
+        <div class="form-field">
+          <label for="transaction-category">Category</label>
+          <select id="transaction-category" name="transaction-category" required>
+            <option value="" selected>Select a category</option>
+            <!-- Category options injected by Render.renderCategories() -->
+          </select>
+        </div>
+        <button id="submit-transaction" type="submit">Add transaction</button>
+      </form>
+      <!-- Transaction validation messages (Validation / Controller) -->
+      <p id="validation-message" role="alert"></p>
+
+      <div class="custom-category">
+        <label for="custom-category-name">Add custom category</label>
+        <input
+          id="custom-category-name"
+          name="custom-category-name"
+          type="text"
+          maxlength="50"
+          autocomplete="off"
+          placeholder="New category name"
+        />
+        <button id="add-category" type="button">Add category</button>
+      </div>
+      <!-- Daftar kategori aktif dengan tombol hapus -->
+      <ul id="category-list" aria-label="Daftar kategori"></ul>
+      <!-- Custom-category validation messages (Validation / Controller) -->
+      <p id="category-validation-message" role="alert"></p>
+    </section>
+
+    <!-- Sort Controls: reorder the Transaction_List (Sort / Controller) -->
+    <section id="sort-controls" aria-label="Sort transactions">
+      <label for="sort-select">Sort by</label>
+      <select id="sort-select" name="sort-select">
+        <option value="none" selected>None</option>
+        <option value="amount">Amount (low to high)</option>
+        <option value="name">Name (A to Z)</option>
+      </select>
+    </section>
+
+    <!-- Transaction List Section: scrollable list (Render.renderList()) -->
+    <section id="transaction-list-section" aria-label="Transaction list">
+      <ul id="transaction-list">
+        <!-- List items, each with a delete control, injected by app.js -->
+      </ul>
+      <p id="empty-list-message">No transactions recorded yet.</p>
+      <!-- Delete error message shown when a storage write fails (Req 4.4) -->
+      <p id="delete-error-message" role="alert"></p>
+    </section>
+
+    <!-- Chart Section: inline SVG Pie_Chart (Chart.renderChart()) -->
+    <section id="chart-section" aria-label="Spending distribution chart">
+      <div id="chart-container">
+        <p id="chart-empty-message">No spending data available yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

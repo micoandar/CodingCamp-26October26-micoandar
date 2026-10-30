@@ -1,0 +1,1051 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.0 Set up project structure": [
+      {
+        "executionId": "039a7d60-56a6-4e5a-8e65-50d2edf9c3b1",
+        "chatSessionId": "sess_c9b7d537-fc3d-462c-b354-628b1ba69e9f",
+        "timestamp": 1793280199399
+      },
+      {
+        "executionId": "039a7d60-56a6-4e5a-8e65-50d2edf9c3b1",
+        "chatSessionId": "sess_c9b7d537-fc3d-462c-b354-628b1ba69e9f",
+        "timestamp": 1793280463631
+      }
+    ],
+    "1.1 Create `index.html` at the project root with semantic HTML5 boilerplate, viewport meta tag, and links to `css/style.css` and `js/app.js`": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280635107
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280714464
+      }
+    ],
+    "1.2 Create `css/style.css` with an empty base (placeholder for theme variables and layout)": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280635229
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280719282
+      }
+    ],
+    "1.3 Create `js/app.js` with a module structure scaffold (State, Storage, Validation, Render, Chart, Sort, Theme, Controller sections as comments or objects)": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280635324
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280724436
+      }
+    ],
+    "1.4 Verify the app loads without console errors when opening `index.html` in a browser": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280635424
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280729767
+      }
+    ],
+    "2.0 Build the HTML structure": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280635512
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280796584
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793281281818
+      }
+    ],
+    "2.1 Add a Header region containing a Balance display element and a theme toggle button": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280635603
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793281289575
+      }
+    ],
+    "2.2 Add a Form Section with input fields for name (text), amount (number), category (select), a submit button, and a custom-category input with an add button": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280635694
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793281296093
+      }
+    ],
+    "2.3 Add a Sort Controls region with a select for sort option (by amount, by category) and a default \"none\" option": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280635782
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793281299475
+      }
+    ],
+    "2.4 Add a Transaction List Section with a scrollable container (`ul` element) for rendered transactions": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280635875
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793281304601
+      }
+    ],
+    "2.5 Add a Chart Section with a container element for the SVG Pie_Chart": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280635954
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793281310445
+      }
+    ],
+    "2.6 Add a validation message area near the form for displaying errors": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280636039
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793281316320
+      }
+    ],
+    "3.0 Implement the State Module": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280636131
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793281330858
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793285258287
+      }
+    ],
+    "3.1 Define in-memory state holding `transactions` (array), `categories` (array initialized with `[\"Food\", \"Transport\", \"Fun\"]`), and `theme` (string defaulting to `\"light\"`)": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280636208
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793285296904
+      }
+    ],
+    "3.2 Provide accessors to read and mutate state (get transactions, add transaction, delete transaction by id, get categories, add category, get/set theme)": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280636368
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793285304493
+      }
+    ],
+    "3.3 Ensure every state mutation triggers persistence and re-render through the Controller (wire this once the Controller exists)": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280636461
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793285310770
+      }
+    ],
+    "4.0 Implement the Storage Module": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280636561
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793285321695
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793287498605
+      }
+    ],
+    "4.1 Implement `loadState()` that reads `ev_transactions`, `ev_categories`, and `ev_theme` from Local Storage, parses JSON, and returns state with defaults on missing or malformed data": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280636654
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793287504958
+      }
+    ],
+    "4.2 Implement `saveTransactions()` that serializes the transactions array to `ev_transactions`": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280636743
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793287510739
+      }
+    ],
+    "4.3 Implement `saveCategories()` that serializes the categories array to `ev_categories`": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280636831
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793287516678
+      }
+    ],
+    "4.4 Implement `saveTheme()` that writes the theme string to `ev_theme`": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280636925
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793287523631
+      }
+    ],
+    "4.5 Wrap `JSON.parse` in error handling that falls back to defaults on failure": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280637010
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793287530686
+      }
+    ],
+    "5.0 Implement the Validation Module": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280637095
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793287544713
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793287774130
+      }
+    ],
+    "5.1 Implement `validateTransaction(name, amount, category)` as a pure function that rejects when name is empty, amount is empty or not a positive number, or category is not selected": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280637220
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793287778227
+      }
+    ],
+    "5.2 Implement `validateCategory(name, existingCategories)` as a pure function that rejects when name is empty or duplicates an existing category (case-insensitive)": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280637361
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793288087178
+      }
+    ],
+    "5.3 Return a validation result containing a pass/fail flag and a descriptive message": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280637506
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793288093759
+      }
+    ],
+    "6.0 Implement the Render Module": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280637611
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793288108639
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793288281305
+      }
+    ],
+    "6.1 Implement `renderBalance()` that computes the sum of all transaction amounts and updates the Balance display element": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280637725
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793288288542
+      }
+    ],
+    "6.2 Implement `renderList()` that rebuilds the Transaction_List from the transactions array, creating one list item per transaction showing name, amount, and category, each with a delete control": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280637829
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793288296596
+      }
+    ],
+    "6.3 Implement `renderCategories()` that rebuilds the category select options from the categories array": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280637941
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793288303436
+      }
+    ],
+    "6.4 Ensure each render function is idempotent (same state produces same output) and replaces the relevant DOM region": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280638062
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793288309842
+      }
+    ],
+    "7.0 Implement the Chart Module": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280638186
+      },
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793288325155
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793289186936
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793289252006
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793289665624
+      }
+    ],
+    "7.1 Implement `aggregateByCategory(transactions)` as a pure function returning a map of category to the sum of amounts for transactions in that category": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280638322
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793289681558
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793289861038
+      }
+    ],
+    "7.2 Implement `renderChart()` that calls `aggregateByCategory`, computes each slice angle from the category total relative to the grand total, and draws inline SVG path arcs into the chart container": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280638449
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793289869674
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793292504586
+      }
+    ],
+    "7.3 Assign category colors from a fixed palette": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280638544
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793292511910
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793292579054
+      }
+    ],
+    "7.4 Handle the empty state: when there are no transactions, render a placeholder instead of dividing by zero": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280638719
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793292585479
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793292675455
+      }
+    ],
+    "7.5 Clear and redraw the SVG on each update": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280638811
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793292684040
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793292784026
+      }
+    ],
+    "8.0 Implement the Sort Module": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280638896
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793292788710
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793293632446
+      }
+    ],
+    "8.1 Implement `sortTransactions(transactions, option)` as a pure function returning a new sorted array; option is `\"amount\"` (ascending) or `\"category\"` (alphabetical)": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280638981
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793293661075
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793293972655
+      }
+    ],
+    "8.2 Ensure the function does not mutate the input array": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280639075
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793293979893
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793294251290
+      }
+    ],
+    "9.0 Implement the Theme Module": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280639160
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793294255550
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793294623260
+      }
+    ],
+    "9.1 Implement `applyTheme(theme)` that sets the `data-theme` attribute on the root `<html>` element and persists the theme": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280639266
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793294631219
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793295007870
+      }
+    ],
+    "9.2 Implement `toggleTheme()` that switches between `\"dark\"` and `\"light\"`": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280639349
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793295015637
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793295075025
+      }
+    ],
+    "10.0 Implement the Controller / Event Wiring": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280639517
+      },
+      {
+        "executionId": "79affbe1-b9f0-4208-92ba-d43bfe86ed60",
+        "chatSessionId": "sess_e08e602d-2af8-4bae-a220-95bbc2512ef3",
+        "timestamp": 1793295085011
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342198413
+      }
+    ],
+    "10.1 On `DOMContentLoaded`, load state from Local Storage via `loadState()`, apply the stored theme, and render the balance, list, categories, and chart": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280639619
+      },
+      {
+        "executionId": "dafb26da-e9e1-4daf-95bd-27fa32780f7b",
+        "chatSessionId": "sess_6bcc017f-c381-4816-925d-2b0de54c59d4",
+        "timestamp": 1793337798231
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342195054
+      }
+    ],
+    "10.2 Wire the form submit event: validate the transaction, add it to state on success, persist, and re-render; display a validation message on failure without mutating state": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280639705
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793340539974
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793340618845
+      }
+    ],
+    "10.3 Wire the custom-category add button: validate the category, add it to state on success, persist, and re-render categories; display a validation message on failure": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280639800
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793340625480
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793340672651
+      }
+    ],
+    "10.4 Wire the transaction delete control: remove the transaction from state, persist, and re-render": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280639899
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793340676410
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793340734176
+      }
+    ],
+    "10.5 Wire the sort select change event: sort transactions by the selected option and re-render the list; when \"none\" is selected, restore the original order": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280639979
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793340741212
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341188600
+      }
+    ],
+    "10.6 Wire the theme toggle button: toggle the theme, persist, and apply": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280640069
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341191987
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341255857
+      }
+    ],
+    "11.0 Implement the CSS styling and responsive layout": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280640168
+      },
+      {
+        "executionId": "dafb26da-e9e1-4daf-95bd-27fa32780f7b",
+        "chatSessionId": "sess_6bcc017f-c381-4816-925d-2b0de54c59d4",
+        "timestamp": 1793337819079
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793340533052
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341550126
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341553685
+      }
+    ],
+    "11.1 Define CSS custom properties (variables) for the light and dark theme palettes under `:root`/`[data-theme=\"light\"]` and `[data-theme=\"dark\"]`": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280640335
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341262979
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341503543
+      }
+    ],
+    "11.2 Apply a clean, minimal visual style with clear hierarchy and readable typography using the theme variables": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280640423
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341507763
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341511876
+      }
+    ],
+    "11.3 Build a Flexbox single-column layout that stacks header, form, sort controls, list, and chart vertically": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280640528
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341516446
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341520247
+      }
+    ],
+    "11.4 Make the Transaction_List scrollable using `overflow-y: auto` with a max height": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280640627
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341523878
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341527504
+      }
+    ],
+    "11.5 Scale the SVG chart container to available width using a relative `viewBox`": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280640723
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341531410
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341534933
+      }
+    ],
+    "11.6 Add a media query for `max-width: 480px` adjusting font sizes, padding, and chart width so all controls and content fit with no horizontal scrolling": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280640804
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341538766
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341542921
+      }
+    ],
+    "12.0 Manual verification": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280640894
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342176916
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342180957
+      }
+    ],
+    "12.1 Verify adding a valid transaction updates the list, balance, and chart": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280640975
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341561423
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341612465
+      }
+    ],
+    "12.2 Verify submitting with an empty field or non-positive amount shows a validation message and does not add the transaction": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280641058
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341617312
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341620918
+      }
+    ],
+    "12.3 Verify deleting a transaction removes it from the list and updates the balance, chart, and Local Storage": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280641206
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341624909
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341628491
+      }
+    ],
+    "12.4 Verify reloading the page restores all transactions, custom categories, and the theme from Local Storage": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280641296
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341632021
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341635772
+      }
+    ],
+    "12.5 Verify adding a custom category makes it available in the form and persists across reloads": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280641377
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341641299
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341645070
+      }
+    ],
+    "12.6 Verify adding an empty or duplicate category is rejected with a validation message": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280641472
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793341649107
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342141794
+      }
+    ],
+    "12.7 Verify sorting by amount and by category reorders the list while preserving all entries, and re-sorting produces the same order": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280641549
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342145906
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342149771
+      }
+    ],
+    "12.8 Verify the theme toggle switches between dark and light and persists across reloads": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280641639
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342153584
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342157151
+      }
+    ],
+    "12.9 Verify the layout has no horizontal scrolling at a 480px viewport width": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280641736
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342160872
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342165149
+      }
+    ],
+    "12.10 Verify the app loads without console errors in Chrome, Firefox, Edge, and Safari": [
+      {
+        "executionId": "4ec08d5b-54ce-4722-adde-455445ce5ed1",
+        "chatSessionId": "sess_e34494c1-0bc6-4c91-9bf3-f4157c3f3052",
+        "timestamp": 1793280641828
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342169569
+      },
+      {
+        "executionId": "bd32cf47-0ebb-4809-b2bb-90b7321f2b1c",
+        "chatSessionId": "sess_74aeae68-47e8-4202-9ae7-fcac64cf4340",
+        "timestamp": 1793342173166
+      }
+    ]
+  }
+}
